@@ -12,4 +12,4 @@ def safe_print_division(a, b):
         res = None
     finally:
         print("Inside result: {}".format(res))
-    return res
+        return res
