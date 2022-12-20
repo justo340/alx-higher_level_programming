@@ -4,10 +4,10 @@ def safe_print_division(a, b):
     # catches divide by zero exception 
     try:
         res = a / b
-        print("Inside result: {:.1f}".format(res))
+        # print("Inside result: {}".format(res))
     except:
         res = None
-         print("Inside result: {}".format(res))
+        # print("Inside result: {}".format(res))
     finally:
         print("Inside result: {}".format(result))
         return res
