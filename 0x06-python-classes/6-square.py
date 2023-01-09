@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-"""DEFINE A CLASS SQUARE"""
+"""define a class sqaure"""
 
 
 class Square:
-    '''Inisialize Class Square
+    '''Initialize Class Square
     '''
 
     def __init__(self, size=0, position=(0, 0)):
@@ -61,7 +61,7 @@ class Square:
 
     def area(self):
         """calculates area of the square"""
-        return (self.size * self.size)
+        return (self.__size * self.__size)
 
     def print(self):
         """print square using the #character"""
