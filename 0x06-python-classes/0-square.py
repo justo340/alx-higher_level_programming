@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+
+"""Define a class Square."""
 
 
 class Square:
     """
-    Empty class that dfines a square
+    Empty class
     """
     pass
 
