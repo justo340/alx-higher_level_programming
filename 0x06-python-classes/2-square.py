@@ -3,10 +3,8 @@
 """Define a class Square."""
 
 
-
 class Square: 
     '''Class Square object intialized with size'''
-
     def __init__(self, size=0):
         '''init method of class Square'''
         if type(size) != int:
