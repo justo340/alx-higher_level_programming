@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
+
 """define a class sqaure"""
+
+
 
 
 class Square:
@@ -16,16 +19,16 @@ class Square:
          """Call the function to checking property
             Returns:
                 The size of the square"""
-        return self.__size
+        return (self.__size)
 
     @property
     def position(self):
         """call the function to check the property
             returns a tuple position"""
-        return self.__position
+        return (self.__position)
 
     @size.setter
-    def size(self, size):
+    def size(self,value):
         """check errors and setter for size attribute
         Args:
             value: Value to checking errors
@@ -34,14 +37,14 @@ class Square:
             TypeError: Exception if size is not an integer
             ValueError: Exception if size is less than 0
          """
-        if type(size) != int:
+        if type(value) != int:
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size
+        self.__size = value
 
     @position.setter
-    def position(self, size):
+    def position(self,value):
         """checks errors and setter for attribute
         Args:
             Value: Value to check errors
@@ -49,13 +52,13 @@ class Square:
         Raises:
             TypeErrrror:Exception if size is not integer
         """
-        if type(size) is not tuple or len(size) != 2:
+        if type(value) is not tuple or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif type(size[0]) is not int or size[0] < 0:
+        elif type(value[0]) is not int or value[0] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif type(size[1]) is not int or size[1] < 0:
+        elif type(value[1]) is not int or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = size
+        self.__position = value
 
 
     def area(self):
