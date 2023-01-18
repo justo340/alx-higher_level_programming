@@ -7,8 +7,7 @@ import unittest
 import inspect
 import pep8
 import json
-from ...models import base
-Base = base.Base
+from models.base import Base
 
 
 class TestBaseDocs(unittest.TestCase):
