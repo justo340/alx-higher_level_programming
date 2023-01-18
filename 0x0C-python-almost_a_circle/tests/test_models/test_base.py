@@ -7,6 +7,8 @@ import unittest
 import inspect
 import pep8
 import json
+import sys
+from contextlib import redirect_stdout
 from models.base import Base
 
 
