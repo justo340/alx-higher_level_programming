@@ -56,17 +56,17 @@ class Base:
         return dummy
 
     @classmethod
-        def load_from_file(cls):
-            filename = cls.__name__ + ".json"
-            K = []
-            try:
-                with open(filename, 'r') as f:
-                    K = cls.from_json_string(f.read())
-                for i, e in enumerate(K):
-                    K[i] = cls.create(**K[i])
-            except IOError:
-                pass
-        return K
+    def load_from_file(cls):
+        filename = cls.__name__ + ".json"
+        K = []
+        try:
+            with open(filename, 'r') as f:
+                K = cls.from_json_string(f.read())
+            for i, e in enumerate(K):
+                K[i] = cls.create(**K[i])
+        except IOError:
+            pass
+    return K
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
