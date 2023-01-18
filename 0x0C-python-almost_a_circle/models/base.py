@@ -6,6 +6,7 @@ This module contains the "Base" class
 import csv
 import json
 from turtle import *
+import tkinter
 
 
 class Base:
