@@ -66,7 +66,7 @@ class Base:
                 K[i] = cls.create(**K[i])
         except IOError:
             pass
-    return K
+        return K
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
