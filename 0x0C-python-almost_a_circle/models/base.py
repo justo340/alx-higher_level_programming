@@ -5,7 +5,7 @@ This module contains the "Base" class
 
 import csv
 import json
-import turtle
+from turtle import *
 
 
 class Base:
