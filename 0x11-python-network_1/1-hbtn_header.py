@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 # Python script that takes in a URL sends a request to the URL
+"""
+@author :justus njogu
+"""
 import sys
 import urllib.request
 

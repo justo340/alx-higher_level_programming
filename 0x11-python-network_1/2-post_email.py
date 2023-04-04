@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # Take in a URL and email, send POST request
-
+"""
+@author :justus njogu
+"""
 import sys
 import urllib.request
 import urllib.parse

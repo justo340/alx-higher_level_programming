@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 # Take in a URL, send a request to URL, and dispaly body
+"""
+@author :justus njogu
+"""
 
 import sys
 import urllib.request
