@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 # Python script that fetches https://intranet.hbtn.io/status
 
+"""
+@author:justus njogu
+"""
+
 from urllib.request import urlopen
 
 
